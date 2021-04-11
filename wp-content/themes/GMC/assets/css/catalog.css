@@ -1,0 +1,24 @@
+.catalog {
+  background: var(--back);
+  padding: 48px 0 90px; }
+  .catalog .margin h1 {
+    margin-bottom: 28px; }
+  .catalog .margin .series-catalog {
+    width: 400px;
+    margin-bottom: 60px; }
+    .catalog .margin .series-catalog .img-catalog {
+      margin-bottom: 12px; }
+      .catalog .margin .series-catalog .img-catalog img {
+        width: 100%; }
+    .catalog .margin .series-catalog h2 {
+      white-space: pre-wrap;
+      margin-bottom: 14px; }
+    .catalog .margin .series-catalog h4 {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center; }
+    .catalog .margin .series-catalog h4:before {
+      content: url("../images/red_arrow.svg");
+      margin-right: 8px; }
+
+/*# sourceMappingURL=catalog.css.map */

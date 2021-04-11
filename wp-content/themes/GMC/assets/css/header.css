@@ -1,0 +1,29 @@
+header {
+  position: fixed;
+  width: 100%;
+  background: var(--back);
+  z-index: 1000;
+  padding: 24px 0;
+  top: 0;
+  left: 0; }
+  header .logo {
+    margin-right: 70px; }
+  header .minnav {
+    width: 310px; }
+    header .minnav h5 {
+      transition: 0.5s;
+      border-bottom: 1px solid var(--back); }
+    header .minnav h5:hover {
+      border-bottom: 1px solid black; }
+  header .tel-mail {
+    width: 600px; }
+    header .tel-mail .tel h5:nth-child(1) {
+      padding-right: 10px;
+      border-right: 1px solid black;
+      margin-right: 10px; }
+    header .tel-mail .viber-telegram {
+      width: 44px; }
+    header .tel-mail .searh-basket {
+      width: 67px; }
+
+/*# sourceMappingURL=header.css.map */

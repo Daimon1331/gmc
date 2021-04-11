@@ -1,0 +1,221 @@
+html *
+  outline: none
+  padding: 0
+  margin: 0
+
+img, svg
+  vertical-align: middle
+  max-width: 100%
+
+body
+  padding-top: 96px
+
+.hidden
+  overflow: hidden
+
+.margin
+  width: 1280px
+  margin: 0 auto
+
+a
+  color: var(--text)
+  text-decoration: none
+
+a:hover
+  color: var(--text)
+
+.ultra, h1, h2, .h2-extra, h3, h4, .h4-semibold, h5, .h5-min, .h5-semibold, h6, p
+  color: var(--text)
+
+h1
+  font-family: 'NewYorkExtraLargeMedium', sans-serif
+  font-size: 48px
+  line-height: 48px
+
+h2
+  font-family: 'Montserrat-Medium', sans-serif
+  font-size: 24px
+  line-height: 32px
+
+.h2-extra
+  font-family: 'NewYorkExtraLargeSemibold', sans-serif
+  font-size: 24px
+  line-height: 32px
+
+h3
+  font-family: 'Montserrat-SemiBold', sans-serif
+  font-size: 20px
+  line-height: 28px
+
+h4
+  font-family: 'Montserrat-Medium', sans-serif
+  font-size: 16px
+  line-height: 24px
+
+.h4-semibold
+  font-family: 'Montserrat-SemiBold', sans-serif
+
+h5
+  font-family: 'Montserrat-Medium', sans-serif
+  font-size: 14px
+  line-height: 18px
+  text-transform: uppercase
+
+.h5-min
+  font-family: 'Montserrat-Medium', sans-serif
+
+.h5-semibold
+  font-family: 'Montserrat-SemiBold', sans-serif
+  text-transform: uppercase
+
+h6
+  font-family: 'Montserrat-Bold', sans-serif
+  font-size: 14px
+  line-height: 14px
+
+p
+  font-family: 'Montserrat-Medium', sans-serif
+  font-size: 12px
+  line-height: 12px
+
+.ultra
+  font-family: 'Montserrat-SemiBold', sans-serif
+  font-size: 64px
+  line-height: 64px
+
+
+.banner
+  position: relative
+  background: var(--back)
+  .box-banner
+    width: calc(100vw - (100vw - 1260px)/2)
+    margin-left: auto
+    background-image: url("../images/back1.jpg")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    .margin
+      margin: 0
+      .block-txt
+        margin: 124px 0 100px
+        width: 510px
+        h1
+          margin-bottom: 24px
+          color: white
+        h4
+          margin-bottom: 40px
+          color: white
+        a
+          color: white
+          padding: 15px 120px
+          border: 2px solid white
+          text-align: center
+
+.pride
+  background: var(--back)
+  padding-bottom: 120px
+  .margin
+    h1
+      white-space: pre-wrap
+      margin-bottom: 48px
+    .pride-desc
+      width: 1060px
+      margin: 0 auto 60px
+      h4
+        width: 510px
+    .statistic
+      width: 1100px
+      div
+        p
+          color: var(--red)
+          margin-bottom: 12px
+        h5
+          white-space: pre-wrap
+
+.bigform
+  background: var(--back)
+  padding-bottom: 215px
+  .osnovsix
+    border-right: 2px solid var(--red)
+    padding-right: 72px
+    width: 912px
+    .flexbuy
+      h2
+        margin-bottom: 40px
+      h4
+        margin-bottom: 60px
+        white-space: pre-wrap
+    .flexform
+      .form-column
+        margin-bottom: 52px
+        .w-49
+          width: 49%
+          .entryfield
+            resize: none
+            border: none
+            border-bottom: 2px solid var(--placeholder)
+            background: none
+            font-family: 'Montserrat-Medium', sans-serif
+            font-size: 16px
+            line-height: 24px
+            color: var(--placeholder)
+            padding-bottom: 6px
+          .entryfield:nth-child(1)
+            margin-bottom: 42px
+          .entryfield::placeholder
+            color: var(--placeholder)
+          .chek-valid
+            background-image: url("../images/valid.svg")
+            background-position: right
+            background-repeat: no-repeat
+            background-size: 12px
+          .chek-invalid
+            border-bottom: 2px solid var(--red)
+            color: var(--red)
+        @media screen and (max-width: 740px)
+          width: auto
+      .button-form1
+        color: var(--text)
+        background: none
+        border: 2px solid var(--text)
+        padding: 15px 100px
+        cursor: pointer
+        text-decoration: none
+        width: min-content
+        font-family: 'Montserrat-Medium', sans-serif
+        font-size: 14px
+        line-height: 18px
+        text-transform: uppercase
+        transition: .5s
+      .button-form1:hover
+        background: black
+        border: 2px solid black
+        color: white
+  .contacts
+    margin-left: 48px
+    .phoneaddressemail
+      //@media screen and (max-width: 1170px)
+      //  flex-direction: row
+      //  flex-wrap: wrap
+      h3
+        margin-bottom: 12px
+      h4:nth-child(1)
+        margin-bottom: 6px
+      .phone, .email
+        margin-bottom: 32px
+      .address
+        margin-bottom: 24px
+        h4
+          white-space: pre-wrap
+    .tiv
+      h4
+        margin-right: 30px
+      h4:nth-child(3)
+        margin-right: 0
+
+
+
+
+
+
+
