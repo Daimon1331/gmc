@@ -33,7 +33,7 @@ h1 {
   line-height: 48px; }
 
 h2 {
-  font-family: "Montserrat-Medium", sans-serif;
+  font-family: "Montserrat-SemiBold", sans-serif;
   font-size: 24px;
   line-height: 32px; }
 
@@ -53,7 +53,9 @@ h4 {
   line-height: 24px; }
 
 .h4-semibold {
-  font-family: "Montserrat-SemiBold", sans-serif; }
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
 
 h5 {
   font-family: "Montserrat-Medium", sans-serif;
@@ -62,10 +64,15 @@ h5 {
   text-transform: uppercase; }
 
 .h5-min {
-  font-family: "Montserrat-Medium", sans-serif; }
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none; }
 
 .h5-semibold {
   font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase; }
 
 h6 {
@@ -108,44 +115,50 @@ p {
           color: white;
           padding: 15px 120px;
           border: 2px solid white;
-          text-align: center; }
+          text-align: center;
+          transition: 0.5s; }
+        .banner .box-banner .margin .block-txt a:hover {
+          background: white;
+          border: 2px solid white;
+          color: black; }
 
-.pride {
+.pride, .about, .production {
   background: var(--back);
   padding-bottom: 120px; }
-  .pride .margin h1 {
+  .pride .margin h1, .about .margin h1, .production .margin h1 {
     white-space: pre-wrap;
     margin-bottom: 48px; }
-  .pride .margin .pride-desc {
+  .pride .margin .pride-desc, .about .margin .pride-desc, .production .margin .pride-desc {
     width: 1060px;
     margin: 0 auto 60px; }
-    .pride .margin .pride-desc h4 {
+    .pride .margin .pride-desc h4, .about .margin .pride-desc h4, .production .margin .pride-desc h4 {
       width: 510px; }
-  .pride .margin .statistic {
+  .pride .margin .statistic, .about .margin .statistic, .production .margin .statistic {
     width: 1100px; }
-    .pride .margin .statistic div p {
+    .pride .margin .statistic div p, .about .margin .statistic div p, .production .margin .statistic div p {
       color: var(--red);
       margin-bottom: 12px; }
-    .pride .margin .statistic div h5 {
+    .pride .margin .statistic div h5, .about .margin .statistic div h5, .production .margin .statistic div h5 {
       white-space: pre-wrap; }
 
-.bigform {
+.bigform, .bigform-contacts {
   background: var(--back);
   padding-bottom: 215px; }
-  .bigform .osnovsix {
+  .bigform .osnovsix, .bigform-contacts .osnovsix {
     border-right: 2px solid var(--red);
     padding-right: 72px;
+    padding-bottom: 20px;
     width: 912px; }
-    .bigform .osnovsix .flexbuy h2 {
+    .bigform .osnovsix .flexbuy h1, .bigform-contacts .osnovsix .flexbuy h1 {
       margin-bottom: 40px; }
-    .bigform .osnovsix .flexbuy h4 {
+    .bigform .osnovsix .flexbuy h4, .bigform-contacts .osnovsix .flexbuy h4 {
       margin-bottom: 60px;
       white-space: pre-wrap; }
-    .bigform .osnovsix .flexform .form-column {
+    .bigform .osnovsix .flexform .form-column, .bigform-contacts .osnovsix .flexform .form-column {
       margin-bottom: 52px; }
-      .bigform .osnovsix .flexform .form-column .w-49 {
+      .bigform .osnovsix .flexform .form-column .w-49, .bigform-contacts .osnovsix .flexform .form-column .w-49 {
         width: 49%; }
-        .bigform .osnovsix .flexform .form-column .w-49 .entryfield {
+        .bigform .osnovsix .flexform .form-column .w-49 .entryfield, .bigform-contacts .osnovsix .flexform .form-column .w-49 .entryfield {
           resize: none;
           border: none;
           border-bottom: 2px solid var(--placeholder);
@@ -155,22 +168,22 @@ p {
           line-height: 24px;
           color: var(--placeholder);
           padding-bottom: 6px; }
-        .bigform .osnovsix .flexform .form-column .w-49 .entryfield:nth-child(1) {
+        .bigform .osnovsix .flexform .form-column .w-49 .entryfield:nth-child(1), .bigform-contacts .osnovsix .flexform .form-column .w-49 .entryfield:nth-child(1) {
           margin-bottom: 42px; }
-        .bigform .osnovsix .flexform .form-column .w-49 .entryfield::placeholder {
+        .bigform .osnovsix .flexform .form-column .w-49 .entryfield::placeholder, .bigform-contacts .osnovsix .flexform .form-column .w-49 .entryfield::placeholder {
           color: var(--placeholder); }
-        .bigform .osnovsix .flexform .form-column .w-49 .chek-valid {
+        .bigform .osnovsix .flexform .form-column .w-49 .chek-valid, .bigform-contacts .osnovsix .flexform .form-column .w-49 .chek-valid {
           background-image: url("../images/valid.svg");
           background-position: right;
           background-repeat: no-repeat;
           background-size: 12px; }
-        .bigform .osnovsix .flexform .form-column .w-49 .chek-invalid {
+        .bigform .osnovsix .flexform .form-column .w-49 .chek-invalid, .bigform-contacts .osnovsix .flexform .form-column .w-49 .chek-invalid {
           border-bottom: 2px solid var(--red);
           color: var(--red); }
       @media screen and (max-width: 740px) {
-        .bigform .osnovsix .flexform .form-column {
+        .bigform .osnovsix .flexform .form-column, .bigform-contacts .osnovsix .flexform .form-column {
           width: auto; } }
-    .bigform .osnovsix .flexform .button-form1 {
+    .bigform .osnovsix .flexform .button-form1, .bigform-contacts .osnovsix .flexform .button-form1 {
       color: var(--text);
       background: none;
       border: 2px solid var(--text);
@@ -183,25 +196,51 @@ p {
       line-height: 18px;
       text-transform: uppercase;
       transition: 0.5s; }
-    .bigform .osnovsix .flexform .button-form1:hover {
+    .bigform .osnovsix .flexform .button-form1:hover, .bigform-contacts .osnovsix .flexform .button-form1:hover {
       background: black;
       border: 2px solid black;
       color: white; }
-  .bigform .contacts {
+  .bigform .contacts, .bigform-contacts .contacts {
     margin-left: 48px; }
-    .bigform .contacts .phoneaddressemail h3 {
+    .bigform .contacts .phoneaddressemail h3, .bigform-contacts .contacts .phoneaddressemail h3 {
       margin-bottom: 12px; }
-    .bigform .contacts .phoneaddressemail h4:nth-child(1) {
+    .bigform .contacts .phoneaddressemail h4:nth-child(1), .bigform-contacts .contacts .phoneaddressemail h4:nth-child(1) {
       margin-bottom: 6px; }
-    .bigform .contacts .phoneaddressemail .phone, .bigform .contacts .phoneaddressemail .email {
+    .bigform .contacts .phoneaddressemail .phone, .bigform .contacts .phoneaddressemail .email, .bigform-contacts .contacts .phoneaddressemail .phone, .bigform-contacts .contacts .phoneaddressemail .email {
       margin-bottom: 32px; }
-    .bigform .contacts .phoneaddressemail .address {
+    .bigform .contacts .phoneaddressemail .address, .bigform-contacts .contacts .phoneaddressemail .address {
       margin-bottom: 24px; }
-      .bigform .contacts .phoneaddressemail .address h4 {
+      .bigform .contacts .phoneaddressemail .address h4, .bigform-contacts .contacts .phoneaddressemail .address h4 {
         white-space: pre-wrap; }
-    .bigform .contacts .tiv h4 {
+    .bigform .contacts .tiv h4, .bigform-contacts .contacts .tiv h4 {
       margin-right: 30px; }
-    .bigform .contacts .tiv h4:nth-child(3) {
+    .bigform .contacts .tiv h4:nth-child(3), .bigform-contacts .contacts .tiv h4:nth-child(3) {
       margin-right: 0; }
+
+.breadcrumber {
+  background: var(--back);
+  padding: 48px 0 0; }
+  .breadcrumber .breadcrumb {
+    margin-bottom: 0; }
+
+.breadcrumb-item {
+  position: relative;
+  padding-right: 20px;
+  padding-left: 0; }
+  .breadcrumb-item li, .breadcrumb-item a, .breadcrumb-item .breadcrumb, .breadcrumb-item .breadcrumb-item.active {
+    font-family: "MullerRegular", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: black; }
+
+.breadcrumb-item::before {
+  content: url("../images/crumbs.svg");
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  height: 18px; }
+
+.breadcrumb-item.active::before {
+  display: none; }
 
 /*# sourceMappingURL=titul.css.map */

@@ -1,24 +1,27 @@
-.catalog {
+.catalog, .other-collection {
   background: var(--back);
   padding: 48px 0 90px; }
-  .catalog .margin h1 {
+  .catalog .margin h1, .other-collection .margin h1 {
     margin-bottom: 28px; }
-  .catalog .margin .series-catalog {
+  .catalog .margin .series-catalog, .other-collection .margin .series-catalog {
     width: 400px;
     margin-bottom: 60px; }
-    .catalog .margin .series-catalog .img-catalog {
+    .catalog .margin .series-catalog .img-catalog, .other-collection .margin .series-catalog .img-catalog {
       margin-bottom: 12px; }
-      .catalog .margin .series-catalog .img-catalog img {
+      .catalog .margin .series-catalog .img-catalog img, .other-collection .margin .series-catalog .img-catalog img {
         width: 100%; }
-    .catalog .margin .series-catalog h2 {
+    .catalog .margin .series-catalog h2, .other-collection .margin .series-catalog h2 {
       white-space: pre-wrap;
       margin-bottom: 14px; }
-    .catalog .margin .series-catalog h4 {
+    .catalog .margin .series-catalog h4, .other-collection .margin .series-catalog h4 {
       margin-bottom: 8px;
       display: flex;
       align-items: center; }
-    .catalog .margin .series-catalog h4:before {
+    .catalog .margin .series-catalog h4:before, .other-collection .margin .series-catalog h4:before {
       content: url("../images/red_arrow.svg");
       margin-right: 8px; }
+
+.other-collection {
+  padding-bottom: 196px; }
 
 /*# sourceMappingURL=catalog.css.map */

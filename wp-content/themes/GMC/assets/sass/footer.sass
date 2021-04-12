@@ -1,103 +1,21 @@
 footer
-  background: #282828
-  padding: 32px 0 60px
-  .top-footer
-    padding-bottom: 60px
-    @media screen and (max-width: 800px)
-      flex-direction: column
-  .logo-footer
-    margin-right: 119px
-    @media screen and (max-width: 800px)
-      margin: 0 0 50px 0
-  .minnav
-    width: 573px
-    @media screen and (max-width: 800px)
-      flex-wrap: wrap
-      width: 100%
-    a
-      color: white
-      font-family: 'MullerBold', sans-serif
-      font-size: 14px
-      line-height: 14px
-      @media screen and (max-width: 800px)
-        margin: 0 20px 20px 0
-  .contact-footer
-    padding-bottom: 44px
-    border-bottom: 1px solid #585858
-    @media screen and (max-width: 800px)
-      justify-content: left!important
-      flex-wrap: wrap
-      padding-bottom: 20px
-      div
-        margin: 0 20px 20px 0
-      div:nth-child(4)
-        margin: 0
-    h5
-      color: white
-      font-family: 'MullerBold', sans-serif
-      font-size: 16px
-      line-height: 16px
-      padding-bottom: 12px
-    p, a
-      color: white
-      font-family: 'MullerRegular', sans-serif
-      font-size: 14px
-      line-height: 16px
-    .icons a
-      margin-right: 16px
-    .icons a:nth-child(3)
-      margin-right: 0
-  .info-footer
-    padding-top: 36px
-    @media screen and (max-width: 410px)
-      flex-direction: column
-      flex-flow: column-reverse
-      text-align: center
-      padding-top: 20px
-    a
-      color: white
-    .lang-footer
-      @media screen and (max-width: 410px)
-        justify-content: center
-        margin-bottom: 40px
-      p
-        font-family: 'MullerBold', sans-serif
-        font-size: 14px
-        line-height: 14px
-        color: white
-        margin-right: 4px
-      .btn-secondary
-        background: transparent
-        border: none
-        padding: 0
-        font-family: 'MullerBold', sans-serif
-        font-size: 14px
-        line-height: 14px
-      .btn-secondary:focus, .btn-secondary:active
-        outline: none
-        box-shadow: none
-      .dropdown-toggle::after
-        content: url("../images/langarrow.svg")
-        border: none
-        margin-left: 2px
-        height: 18px
-      .dropdown-toggle::before
-        content: url("../images/langruss.svg")
-        border: none
-        margin-right: 8px
-        height: 18px
-      .dropdown
-        ul
-          width: min-content
-          min-width: auto
-          li
-            a
-              font-family: 'MullerBold', sans-serif
-              font-size: 14px
-              line-height: 14px
-              color: black
+  a, h5
+    color: var(--footer-text)!important
+  background: var(--text)
+  padding: 24px 0 42px
+  .footer-nav
+    margin-bottom: 66px
+    .minnav
+      width: 442px
+      h5:hover
+        color: var(--footer-text)!important
+        border-bottom: 1px solid white
+    .ico-footer
+      width: 112px
+  .footer-info
+    h5:nth-child(1)
+      width: 840px
 
-          li:hover
-            color: black
+
 
 

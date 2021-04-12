@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,CAAC;EACC,MAAM,CAAC,QAAQ;EACf,MAAM,CAAC,QAAQ;EACf,KAAK,CAAC,QAAQ;EACd,aAAa,CAAC,QAAQ",
+"mappings": "AAAA,CAAC;EACC,MAAM,CAAC,QAAQ;EACf,MAAM,CAAC,QAAQ;EACf,KAAK,CAAC,QAAQ;EACd,aAAa,CAAC,QAAQ;EACtB,aAAa,CAAC,QAAQ",
 "sources": ["../sass/color.sass"],
 "names": [],
 "file": "color.css"

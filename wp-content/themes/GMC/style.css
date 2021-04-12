@@ -1,9 +1,14 @@
 /*
 Theme Name: GMC
  */
+/*@import "assets/css/slick.css";*/
+/*@import "assets/css/bootstrap.min.css";*/
+/*@import "assets/css/swiper-bundle.css";*/
 @import "assets/css/titul.css";
 @import "assets/css/header.css";
 @import "assets/css/catalog.css";
+@import "assets/css/about.css";
+@import "assets/css/contacts.css";
 @import "assets/css/fonts.css";
 @import "assets/css/footer.css";
 @import "assets/css/404.css";

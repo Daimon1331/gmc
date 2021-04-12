@@ -1,0 +1,49 @@
+.about {
+  padding-top: 64px; }
+
+.slider-doc {
+  background: var(--back); }
+  .slider-doc .margin {
+    position: relative; }
+  .slider-doc .swiper-container {
+    width: 1060px; }
+  .slider-doc .swiper-button-prev:after {
+    content: url("../images/swiper_prev.svg"); }
+  .slider-doc .swiper-button-next:after {
+    content: url("../images/swiper_next.svg"); }
+
+.production {
+  padding: 92px 0 26px; }
+  .production .w-1060 {
+    width: 1060px !important;
+    margin: 0 auto 72px; }
+  .production .pride-desc-ul {
+    margin-bottom: 72px; }
+    .production .pride-desc-ul h4 {
+      margin-bottom: 16px; }
+    .production .pride-desc-ul ul {
+      width: 510px; }
+      .production .pride-desc-ul ul h4 {
+        display: flex;
+        margin-bottom: 8px; }
+      .production .pride-desc-ul ul h4:before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        margin-right: 9px;
+        background-color: var(--red);
+        border-radius: 50%;
+        flex: 0 0 6px;
+        position: relative;
+        top: 8px;
+        margin-bottom: 8px; }
+
+.video-production {
+  background: var(--back);
+  padding-bottom: 120px; }
+  .video-production .margin {
+    width: 1060px;
+    height: 552px;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=about.css.map */

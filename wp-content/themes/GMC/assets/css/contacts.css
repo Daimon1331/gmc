@@ -1,0 +1,16 @@
+.bigform-contacts {
+  padding: 64px 0 60px; }
+  .bigform-contacts .osnovsix {
+    width: 660px; }
+  .bigform-contacts .contacts {
+    flex: 1; }
+    .bigform-contacts .contacts .phoneaddressemail h3 {
+      margin-bottom: 20px; }
+    .bigform-contacts .contacts .phoneaddressemail .conttxt h2 {
+      margin-bottom: 14px; }
+    .bigform-contacts .contacts .phoneaddressemail .conttxt h4 {
+      margin-bottom: 0; }
+    .bigform-contacts .contacts .phone h4:nth-child(2) {
+      white-space: pre-wrap; }
+
+/*# sourceMappingURL=contacts.css.map */
