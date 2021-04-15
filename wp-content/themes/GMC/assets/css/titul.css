@@ -240,6 +240,13 @@ p {
   padding-right: 0;
   height: 18px; }
 
+.breadcrumb-item + .breadcrumb-item::before {
+  content: url("../images/crumbs.svg");
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  height: 18px; }
+
 .breadcrumb-item.active::before {
   display: none; }
 

@@ -1,0 +1,17 @@
+.thanks {
+  background: var(--back);
+  text-align: center;
+  height: calc(100vh - 330px); }
+  .thanks .ultra {
+    margin: 150px 0 20px;
+    white-space: pre-wrap; }
+  .thanks .mt80 {
+    margin: 80px 0 18px; }
+  .thanks .mt80 + div {
+    margin-bottom: 100px; }
+    .thanks .mt80 + div h3:nth-child(1) {
+      padding-right: 32px;
+      margin-right: 32px;
+      border-right: 2px solid black; }
+
+/*# sourceMappingURL=thanks.css.map */

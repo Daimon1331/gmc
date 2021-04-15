@@ -1,11 +1,11 @@
 jQuery(function($) {
-    $('.slidertitul').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"></button>',
-        nextArrow: '<button class="slick-next" aria-label="Next" type="button"></button>'
-    });
+    // $('.slidertitul').slick({
+    //     infinite: true,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"></button>',
+    //     nextArrow: '<button class="slick-next" aria-label="Next" type="button"></button>'
+    // });
 
 
     // $(function() {
@@ -34,23 +34,6 @@ jQuery(function($) {
 
 
 
-
-
-
-    // window.onscroll = function() {
-    //     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    //
-    //     if(scrolled > 2){
-    //         $(".filters").addClass('filter-padding');
-    //
-    //     }
-    //     if(2 > scrolled){
-    //         $(".filters").removeClass('filter-padding');
-    //
-    //     }
-    //
-    //
-    // };
 
     $('#preloader').fadeOut(1000,function(){$(this).remove();});
 
@@ -104,8 +87,8 @@ jQuery(function($) {
     // });
 
 
-    const swiper = new Swiper('.swiper-container', {
-        loop: true,
+    const swiper1 = new Swiper('.slider-doc .swiper-container', {
+        loop: false,
         slidesPerView: 5,
         spaceBetween: 40,
         // Navigation arrows
@@ -115,6 +98,59 @@ jQuery(function($) {
         },
 
     });
+
+    const swiper2 = new Swiper('.slider-goods .swiper-container', {
+        loop: false,
+        slidesPerView: 6,
+        spaceBetween: 24,
+        // freeMode: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.slider-goods .swiper-button-next',
+            prevEl: '.slider-goods .swiper-button-prev',
+        },
+
+    });
+
+
+
+    $(document).ready(function() {
+        $('.slider-goods .swiper-slide-active').addClass("active-red-slide");
+    });
+
+    $('.slider-goods .swiper-slide').click(function () {
+        $('.slider-goods .swiper-slide').removeClass("active-red-slide");
+        $(this).addClass("active-red-slide");
+    });
+
+
+
+    const swiper3 = new Swiper('.subcategory .swiper-container', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.subcategory .swiper-button-next',
+            prevEl: '.subcategory .swiper-button-prev',
+        },
+
+    });
+
+
+    var quantity = document.getElementById("#quantity");
+    $("#button-plus").click(function () {
+        quantity++;
+        document.getElementById("quantity").innerHTML = quantity;
+    });
+    $("#button-minus").click(function () {
+        if (+quantity >= 1) {
+        quantity--;
+        document.getElementById("quantity").innerHTML = quantity;
+        }
+    });
+
 });
 
 

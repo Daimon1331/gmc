@@ -7,10 +7,12 @@
     position: relative; }
   .slider-doc .swiper-container {
     width: 1060px; }
-  .slider-doc .swiper-button-prev:after {
-    content: url("../images/swiper_prev.svg"); }
-  .slider-doc .swiper-button-next:after {
-    content: url("../images/swiper_next.svg"); }
+
+.swiper-button-prev:after {
+  content: url("../images/swiper_prev.svg"); }
+
+.swiper-button-next:after {
+  content: url("../images/swiper_next.svg"); }
 
 .production {
   padding: 92px 0 26px; }

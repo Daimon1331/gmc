@@ -1,0 +1,170 @@
+.preview
+  padding: 65px 0
+  background: var(--back)
+  .preview-content
+    h1
+      margin-bottom: 48px
+  .img-preview
+    width: 730px
+    flex: 0 0 730px
+    margin-left: 40px
+    img
+      width: 100%
+.filters
+  background: var(--back)
+  padding: 50px 0
+  .furniture
+    font-family: 'Montserrat-SemiBold', sans-serif
+    font-size: 20px
+    line-height: 28px
+    div:nth-child(odd)
+      input
+        display: none
+      label
+        padding-bottom: 8px
+        border-bottom: 2px solid var(--blue-border)
+        transition: .5s
+      input:checked + label
+        border-bottom: 2px solid var(--red)
+      label:hover
+        cursor: pointer
+    div:nth-child(even)
+      width: 40px
+      padding-bottom: 8px
+      border-bottom: 2px solid var(--blue-border)
+    div:last-child
+      flex: 1
+      border-bottom: 2px solid var(--blue-border)
+  .filter-optionality
+    padding: 16px 0
+    border-bottom: 2px solid var(--blue-border)
+    div:nth-child(1)
+      margin-right: 26px
+    .optionality
+      cursor: pointer
+    .optionality
+      input
+        position: absolute
+        z-index: -1
+        opacity: 0
+    .optionality-txt
+      display: inline-flex
+      align-items: center
+      user-select: none
+    .optionality
+      span::before
+        content: ''
+        display: inline-block
+        width: 16px
+        height: 16px
+        border: 2px solid var(--blue-border)
+        border-radius: 2px
+        margin-right: 8px
+    .optionality>input:checked+span::before
+      background-image: url("../images/check_optoin.svg")
+      background-repeat: no-repeat
+      background-position: 50%
+.slider-card
+  padding: 48px 0 120px
+  background: var(--back)
+  h2
+    margin-bottom: 36px
+  .slider-goods
+    position: relative
+    margin-bottom: 18px
+    .swiper-container
+      width: 1124px
+      .swiper-slide
+        display: flex
+        flex-direction: column
+        width: 160px!important
+        transition: .5s
+        div
+          width: 100%
+          height: 96px
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        p
+          margin-top: 8px
+          padding: 0 10px
+          text-align: center
+      .active-red-slide
+        width: 204px!important
+        div
+          border: 2px solid var(--red)
+          border-radius: 4px
+          width: 100%
+          height: 144px
+        p
+          font-family: 'Montserrat-Bold', sans-serif
+          font-size: 14px
+          line-height: 14px
+          color: var(--red)
+.subcategory
+  .swiper-container
+    width: 510px
+    height: 348px
+    flex: 0 0 510px
+    margin: 50px 40px 0 0
+  .subcategory-options
+    h3
+      margin-bottom: 12px
+    h4
+      margin-bottom: 18px
+    .color-subcategory
+      div:nth-child(1)
+        margin-right: 26px
+      .color-sub
+        cursor: pointer
+      .color-sub
+        input
+          position: absolute
+          z-index: -1
+          opacity: 0
+      .color-sub-txt
+        display: inline-flex
+        align-items: center
+        user-select: none
+      .color-sub
+        span::before
+          content: ''
+          display: inline-block
+          width: 20px
+          height: 20px
+          border: 1px solid transparent
+          border-radius: 50%
+          margin-right: 10px
+          background-color: transparent
+          background-image: url("../images/check_color.svg")
+          background-repeat: no-repeat
+          background-position: 50%
+      .color-sub>input:checked+span::before
+        border: 1px solid black
+        background-color: white
+  .tabs-option
+    .row
+      margin-top: 12px
+    .row:nth-child(1)
+      margin-top: 0
+      border-bottom: 1px solid var(--text)
+    .quantity
+      width: 34px
+      height: 22px
+      border-top: 1px solid black
+      border-bottom: 1px solid black
+    .button-plus, .button-minus
+      width: 33px
+      height: 22px
+      background: var(--button-calc)
+    .button-plus, .button-plus:active, .button-plus:focus
+      border-radius: 0 3px 3px 0
+      border: 1px solid black
+      outline: none
+    .button-minus, .button-minus:active, .button-minus:focus
+      border-radius: 3px 0 0 3px
+      border: 1px solid black
+      outline: none
+
+
