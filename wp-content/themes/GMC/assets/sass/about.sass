@@ -1,11 +1,19 @@
 .about
   padding-top: 64px
+  padding-bottom: 20px
 .slider-doc
   background: var(--back)
   .margin
     position: relative
   .swiper-container
     width: 1060px
+    @media screen and (max-width: 1350px)
+      width: 870px
+    @media screen and (max-width: 991px)
+      width: 100%
+      .swiper-slide
+        display: flex
+        justify-content: center
 .swiper-button-prev:after
   content: url("../images/swiper_prev.svg")
 .swiper-button-next:after
@@ -15,12 +23,23 @@
   .w-1060
     width: 1060px!important
     margin: 0 auto 72px
+    @media screen and (max-width: 1350px)
+      width: 100%!important
   .pride-desc-ul
     margin-bottom: 72px
+    @media screen and (max-width: 1350px)
+      flex-direction: column
+    .mt-32
+      @media screen and (max-width: 991px)
+      margin-top: 32px
     h4
       margin-bottom: 16px
+      @media screen and (max-width: 1350px)
+        width: 100% !important
     ul
       width: 510px
+      @media screen and (max-width: 1350px)
+        width: 100% !important
       h4
         display: flex
         margin-bottom: 8px
@@ -39,7 +58,15 @@
 .video-production
   background: var(--back)
   padding-bottom: 120px
+  @media screen and (max-width: 991px)
+    padding-bottom: 90px
   .margin
     width: 1060px
     height: 552px
     margin: 0 auto
+    @media screen and (max-width: 1350px)
+      width: 950px
+    @media screen and (max-width: 991px)
+      width: 100%
+      padding: 0 20px
+      margin: 0

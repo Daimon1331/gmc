@@ -5,14 +5,40 @@ footer {
     color: var(--footer-text) !important; }
   footer .footer-nav {
     margin-bottom: 66px; }
+    @media screen and (max-width: 830px) {
+      footer .footer-nav {
+        margin-bottom: 0; } }
+    @media screen and (max-width: 1350px) {
+      footer .footer-nav {
+        flex-direction: column;
+        margin-bottom: 15px; } }
     footer .footer-nav .minnav {
       width: 442px; }
+      @media screen and (max-width: 1350px) {
+        footer .footer-nav .minnav {
+          margin: 40px 0; } }
+      @media screen and (max-width: 830px) {
+        footer .footer-nav .minnav {
+          width: auto;
+          flex-direction: column;
+          height: 108px;
+          align-items: center; } }
+      footer .footer-nav .minnav h5 {
+        transition: 0.5s;
+        border-bottom: 1px solid var(--text); }
       footer .footer-nav .minnav h5:hover {
         color: var(--footer-text) !important;
         border-bottom: 1px solid white; }
     footer .footer-nav .ico-footer {
       width: 112px; }
+  @media screen and (max-width: 830px) {
+    footer .footer-info {
+      flex-direction: column; } }
   footer .footer-info h5:nth-child(1) {
-    width: 840px; }
+    width: 65%; }
+    @media screen and (max-width: 830px) {
+      footer .footer-info h5:nth-child(1) {
+        margin-bottom: 15px;
+        width: 100%; } }
 
 /*# sourceMappingURL=footer.css.map */

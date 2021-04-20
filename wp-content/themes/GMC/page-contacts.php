@@ -46,14 +46,14 @@ Template Name: Contacts
                     <div class="phone">
                         <div class="conttxt">
                             <h2>Телефоны:</h2>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between big-tel">
                                 <div class="d-flex flex-column">
                                 <div class="d-flex mb-2"><h4 class="h4-semibold">Отдел продаж:</h4><h4>   <a href="tel:+375296969399">+375 29 696-93-99</a></h4></h4></div>
-                                <div class="d-flex"><h4 class="h4-semibold">Бухгалтерия:</h4><h4>   <a href="tel:+375296840030">+375 29 684-00-30</a></h4></div>
+                                <div class="d-flex mb-2"><h4 class="h4-semibold">Бухгалтерия:</h4><h4>   <a href="tel:+375296840030">+375 29 684-00-30</a></h4></div>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <div class="d-flex mb-2"><h4 class="h4-semibold">Тел/факс:</h4><h4>   <a href="tel:80215654881">8 021 56-54-881</a></h4></h4></div>
-                                    <div class="d-flex"><h4 class="h4-semibold">Логистика:</h4><h4>   <a href="tel:+375445339265">+375 44 533-92-65</a></h4></div>
+                                    <div class="d-flex mb-2"><h4 class="h4-semibold">Логистика:</h4><h4>   <a href="tel:+375445339265">+375 44 533-92-65</a></h4></div>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ Template Name: Contacts
                     <div class="email">
                         <div class="conttxt">
                             <h2>Email:</h2>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between big-mail">
                             <h4><a href="mailto:info@1gmc.by">info@1gmc.by</a></h4>
                                 <div class="d-flex tiv">
                                     <h4 class="h4-semibold"><a href="/">Telegram</a></h4>

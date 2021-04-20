@@ -36,23 +36,6 @@ Template Name: About
                 <br>
                 <br>Мы любим свою работу и относимся к ней ответственно!</h4>
             </div>
-<!--            <div class="d-flex justify-content-between statistic">-->
-<!--                <div class="d-flex flex-column">-->
-<!--                    <p class="ultra">600м²</p>-->
-<!--                    <h5 class="h5-semibold">производственных-->
-<!--                        помещений</h5>-->
-<!--                </div>-->
-<!--                <div class="d-flex flex-column">-->
-<!--                    <p class="ultra">400м²</p>-->
-<!--                    <h5 class="h5-semibold">крытых складских-->
-<!--                        помещений</h5>-->
-<!--                </div>-->
-<!--                <div class="d-flex flex-column">-->
-<!--                    <p class="ultra">в 2021</p>-->
-<!--                    <h5 class="h5-semibold">склад хранения-->
-<!--                        сырья</h5>-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
     </div>
 </section>
@@ -105,7 +88,7 @@ Template Name: About
                         </div>
             <div class="d-flex justify-content-between pride-desc pride-desc-ul">
                 <div><img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/img_production2.jpg"></div>
-               <div class="d-flex flex-column">
+               <div class="d-flex flex-column mt-32">
                 <h4 class="h4-semibold">Для производства металлокаркасов офисной,
                     детской и ученической мебели, а также каркасов для кроватей
                     мы используем:</h4>
@@ -140,8 +123,8 @@ Template Name: About
 </section>
 <section class="video-production">
     <div class="margin">
-<!--        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4hzCbEt4O-Q?autoplay=1&mute=1&loop=1&playlist=4hzCbEt4O-Q" frameborder="0"-->
-<!--                allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4hzCbEt4O-Q?autoplay=1&mute=1&loop=1&playlist=4hzCbEt4O-Q" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </section>
 <?php get_template_part( 'other-collections' );  ?>

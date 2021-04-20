@@ -1,10 +1,15 @@
 .thanks {
   background: var(--back);
   text-align: center;
-  height: calc(100vh - 330px); }
+  height: calc(100vh - 96px); }
   .thanks .ultra {
     margin: 150px 0 20px;
     white-space: pre-wrap; }
+    @media screen and (max-width: 600px) {
+      .thanks .ultra {
+        font-family: "NewYorkExtraLargeRegular", sans-serif;
+        font-size: 48px;
+        line-height: 48px; } }
   .thanks .mt80 {
     margin: 80px 0 18px; }
   .thanks .mt80 + div {
@@ -13,5 +18,13 @@
       padding-right: 32px;
       margin-right: 32px;
       border-right: 2px solid black; }
+      @media screen and (max-width: 600px) {
+        .thanks .mt80 + div h3:nth-child(1) {
+          border: none;
+          margin: 0 0 20px 0;
+          padding: 0; } }
+  @media screen and (max-width: 600px) {
+    .thanks .tel-thanks {
+      flex-direction: column; } }
 
 /*# sourceMappingURL=thanks.css.map */

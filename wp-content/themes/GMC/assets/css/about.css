@@ -1,5 +1,6 @@
 .about {
-  padding-top: 64px; }
+  padding-top: 64px;
+  padding-bottom: 20px; }
 
 .slider-doc {
   background: var(--back); }
@@ -7,6 +8,15 @@
     position: relative; }
   .slider-doc .swiper-container {
     width: 1060px; }
+    @media screen and (max-width: 1350px) {
+      .slider-doc .swiper-container {
+        width: 870px; } }
+    @media screen and (max-width: 991px) {
+      .slider-doc .swiper-container {
+        width: 100%; }
+        .slider-doc .swiper-container .swiper-slide {
+          display: flex;
+          justify-content: center; } }
 
 .swiper-button-prev:after {
   content: url("../images/swiper_prev.svg"); }
@@ -19,12 +29,26 @@
   .production .w-1060 {
     width: 1060px !important;
     margin: 0 auto 72px; }
+    @media screen and (max-width: 1350px) {
+      .production .w-1060 {
+        width: 100% !important; } }
   .production .pride-desc-ul {
     margin-bottom: 72px; }
+    @media screen and (max-width: 1350px) {
+      .production .pride-desc-ul {
+        flex-direction: column; } }
+    .production .pride-desc-ul .mt-32 {
+      margin-top: 32px; }
     .production .pride-desc-ul h4 {
       margin-bottom: 16px; }
+      @media screen and (max-width: 1350px) {
+        .production .pride-desc-ul h4 {
+          width: 100% !important; } }
     .production .pride-desc-ul ul {
       width: 510px; }
+      @media screen and (max-width: 1350px) {
+        .production .pride-desc-ul ul {
+          width: 100% !important; } }
       .production .pride-desc-ul ul h4 {
         display: flex;
         margin-bottom: 8px; }
@@ -43,9 +67,20 @@
 .video-production {
   background: var(--back);
   padding-bottom: 120px; }
+  @media screen and (max-width: 991px) {
+    .video-production {
+      padding-bottom: 90px; } }
   .video-production .margin {
     width: 1060px;
     height: 552px;
     margin: 0 auto; }
+    @media screen and (max-width: 1350px) {
+      .video-production .margin {
+        width: 950px; } }
+    @media screen and (max-width: 991px) {
+      .video-production .margin {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0; } }
 
 /*# sourceMappingURL=about.css.map */

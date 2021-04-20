@@ -6,8 +6,28 @@ header
   padding: 24px 0
   top: 0
   left: 0
+header
+  .minnav
+    @media screen and (max-width: 991px)
+      display: none!important
+  .tel
+    @media screen and (max-width: 991px)
+      display: none!important
+  .viber-telegram
+    @media screen and (max-width: 991px)
+      display: none!important
+  .mail
+    @media screen and (max-width: 991px)
+      display: none!important
+  .form-search
+    @media screen and (max-width: 991px)
+      display: none
+
+header, .mob-nav
   .logo
     margin-right: 70px
+    @media screen and (max-width: 1350px)
+      margin-right: 28px
   .minnav
     width: 310px
     h5
@@ -17,12 +37,116 @@ header
       border-bottom: 1px solid black
   .tel-mail
     width: 600px
+    @media screen and (max-width: 1350px)
+      width: 430px
+    @media screen and (max-width: 991px)
+      width: auto
     .tel
+      @media screen and (max-width: 1350px)
+        flex-direction: column
       h5:nth-child(1)
         padding-right: 10px
         border-right: 1px solid black
         margin-right: 10px
+        @media screen and (max-width: 1350px)
+          padding-right: 0
+          margin-right: 0
+          border-right: none
+          border-bottom: 1px solid black
+          margin-bottom: 1px
+          padding-bottom: 1px
     .viber-telegram
       width: 44px
     .searh-basket
       width: 67px
+      @media screen and (max-width: 991px)
+        width: auto
+  .form-search
+    position: relative
+    margin: 0 auto
+    height: 24px
+    width: 24px
+    input
+      font-family: 'Montserrat-Medium', sans-serif
+      font-size: 16px
+      line-height: 24px
+      height: 24px
+      width: 0
+      padding: 0 42px 0 15px
+      border: none
+      border-bottom: 2px solid transparent
+      outline: none
+      background: transparent
+      transition: .4s cubic-bezier(0, 0.8, 0, 1)
+      position: absolute
+      top: 0
+      right: 0
+      z-index: 2
+    input:focus
+      background: var(--text)
+      color: var(--back)
+      width: 300px
+      z-index: 1
+      border-bottom: 2px solid #F9F0DA
+    input::-webkit-search-cancel-button
+      display: none
+    button
+      background: none
+      border: none
+      height: 24px
+      width: 24px
+      position: absolute
+      top: 0
+      right: 0
+      cursor: pointer
+    button:before
+      content: url("../images/search.svg")
+
+.menu-button
+  width: 32px
+  height: 32px
+  display: none
+  margin-left: 20px
+  @media screen and (max-width: 991px)
+    display: block
+.menu-cross
+  width: 32px
+  height: 32px
+  display: none
+  margin-left: 20px
+
+.mob-nav
+  display: none
+  width: 100%
+  height: 100vh
+  position: fixed
+  background: var(--back)
+  padding: 60px 0 0
+  z-index: 999
+  .minnav
+    flex-direction: column
+    align-items: center
+  .form-search
+    width: 294px
+    input
+      padding: 0
+      border-bottom: 2px solid var(--placeholder)
+      background: var(--back)
+      color: var(--text)
+      width: 270px
+      left: 0
+  .minnav
+    margin-top: 50px
+    height: 150px
+  .tel-mail
+    margin-top: 60px
+    flex-direction: column
+  .tel
+    h5:nth-child(1)
+      padding: 0
+      border-bottom: none!important
+      margin-bottom: 16px!important
+  .mail
+    margin-top: 16px
+    margin-bottom: 28px
+

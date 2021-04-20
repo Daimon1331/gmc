@@ -8,8 +8,8 @@
   font-family: "Montserrat-Bold";
   src: url("../font/Montserrat-Bold.ttf") format("truetype"); }
 @font-face {
-  font-family: "NewYorkExtraLargeMedium";
-  src: url("../font/NewYorkExtraLargeMedium.otf") format("opentype"); }
+  font-family: "NewYorkExtraLargeRegular";
+  src: url("../font/NewYorkExtraLargeRegular.otf") format("opentype"); }
 @font-face {
   font-family: "NewYorkExtraLargeSemibold";
   src: url("../font/NewYorkExtraLargeSemibold.otf") format("opentype"); }

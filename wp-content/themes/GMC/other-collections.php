@@ -1,7 +1,7 @@
 <section class="other-collection">
     <div class="margin">
         <h1>Другие коллекции</h1>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between flex-wrap">
             <div class="d-flex flex-column series-catalog">
                 <div class="img-catalog">
                     <img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/img_catalog1.jpg">

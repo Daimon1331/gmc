@@ -14,9 +14,9 @@
             <h3>«Ищете что-то интересное на нашем сайте?
 К сожалению, страница, которую Вы запрашиваете, не
 существует…»</h3>
-            <div><a class="h4-semibold" href="<?php echo get_option('home'); ?>">Перейти в каталог</a></div>
+            <div><a class="h4-semibold" href="<?php echo get_option('home'); ?>">вернуться на главную</a></div>
         </div>
     </div>
 </section>
 
-<?php get_footer(); ?>
+<?php //get_footer(); ?>

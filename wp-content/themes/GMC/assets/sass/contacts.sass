@@ -4,6 +4,8 @@
     width: 660px
   .contacts
     flex: 1
+    @media screen and (max-width: 1350px)
+      flex: none
     .phoneaddressemail
       h3
         margin-bottom: 20px
@@ -12,6 +14,14 @@
           margin-bottom: 14px
         h4
           margin-bottom: 0
+        .big-tel
+          @media screen and (max-width: 1350px)
+            flex-direction: column
+        .big-mail
+          @media screen and (max-width: 1350px)
+            flex-direction: column
+          h4
+            margin-bottom: 15px
     .phone
       h4:nth-child(2)
         white-space: pre-wrap

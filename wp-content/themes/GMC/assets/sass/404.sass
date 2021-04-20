@@ -1,7 +1,7 @@
 .error-main
   background: var(--back)
   text-align: center
-  height: calc(100vh - 330px)
+  height: calc(100vh - 96px)
   .ultra
     margin: 184px 0 60px
     color: var(--back)
@@ -9,12 +9,16 @@
   h3
     white-space: pre-wrap
     margin-bottom: 40px
+    @media screen and (max-width: 600px)
+      white-space: normal
   a
     color: black
     padding: 15px 120px
     border: 2px solid black
     text-align: center
     transition: .5s
+    @media screen and (max-width: 600px)
+      padding: 15px 30px
   a:hover
     background: black
     border: 2px solid black

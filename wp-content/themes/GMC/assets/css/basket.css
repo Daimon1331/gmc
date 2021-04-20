@@ -1,0 +1,235 @@
+@charset "UTF-8";
+.basket {
+  padding: 65px 0 88px;
+  background: var(--back); }
+  .basket h1 {
+    margin-bottom: 48px; }
+  .basket .total {
+    margin-bottom: 26px; }
+    .basket .total h3:nth-child(1) {
+      padding-bottom: 2px;
+      border-bottom: 2px solid black; }
+    @media screen and (max-width: 500px) {
+      .basket .total h3 {
+        font-family: "Montserrat-Medium", sans-serif;
+        font-size: 16px;
+        line-height: 24px; } }
+  .basket .total:last-child {
+    margin-bottom: 0;
+    margin-top: 26px; }
+  .basket .products-basket {
+    padding: 36px 0;
+    border-top: 2px solid var(--blue-border); }
+    @media screen and (max-width: 991px) {
+      .basket .products-basket {
+        position: relative;
+        flex-direction: column; } }
+    .basket .products-basket .img-basket {
+      width: 180px;
+      height: 120px;
+      align-self: center; }
+      @media screen and (max-width: 991px) {
+        .basket .products-basket .img-basket {
+          width: 50%;
+          height: auto;
+          margin-bottom: 15px; } }
+      .basket .products-basket .img-basket img {
+        width: 100%;
+        height: 100%; }
+    .basket .products-basket .description {
+      width: 400px; }
+      @media screen and (max-width: 1350px) {
+        .basket .products-basket .description {
+          width: 200px; } }
+      @media screen and (max-width: 991px) {
+        .basket .products-basket .description {
+          text-align: center;
+          width: 100%;
+          margin-bottom: 10px; } }
+      .basket .products-basket .description h3:nth-child(1) {
+        margin-bottom: 12px; }
+    .basket .products-basket .price h3:nth-child(1) {
+      margin-bottom: 24px; }
+    .basket .products-basket .price h3:nth-child(2):after {
+      content: " р."; }
+    @media screen and (max-width: 500px) {
+      .basket .products-basket .price h4 {
+        font-family: "Montserrat-Medium", sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: none; } }
+    .basket .products-basket .quantity-basket h3 {
+      margin-bottom: 27px; }
+    .basket .products-basket .quantity-basket .quantity {
+      width: 34px;
+      height: 22px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black; }
+    .basket .products-basket .quantity-basket .button-plus, .basket .products-basket .quantity-basket .button-minus {
+      width: 33px;
+      height: 22px;
+      background: var(--button-calc); }
+    .basket .products-basket .quantity-basket .button-plus, .basket .products-basket .quantity-basket .button-plus:active, .basket .products-basket .quantity-basket .button-plus:focus {
+      border-radius: 0 3px 3px 0;
+      border: 1px solid black;
+      outline: none; }
+    .basket .products-basket .quantity-basket .button-minus, .basket .products-basket .quantity-basket .button-minus:active, .basket .products-basket .quantity-basket .button-minus:focus {
+      border-radius: 3px 0 0 3px;
+      border: 1px solid black;
+      outline: none; }
+    .basket .products-basket .cost h3:nth-child(1) {
+      margin-bottom: 24px; }
+    .basket .products-basket .cost h3:nth-child(2):after {
+      content: " р."; }
+    .basket .products-basket .cross-basket {
+      width: 24px;
+      height: 24px; }
+      @media screen and (max-width: 991px) {
+        .basket .products-basket .cross-basket {
+          position: absolute;
+          top: 0;
+          right: 0; } }
+      .basket .products-basket .cross-basket img {
+        width: 100%;
+        height: 100%; }
+  .basket .products-basket:last-child {
+    border-bottom: 2px solid var(--blue-border); }
+
+.form-basket {
+  background: var(--back);
+  padding-bottom: 200px; }
+  @media screen and (max-width: 400px) {
+    .form-basket .margin {
+      padding: 0; } }
+  @media screen and (max-width: 991px) {
+    .form-basket {
+      padding-bottom: 120px; } }
+  .form-basket .back-form {
+    background: #1E2F61;
+    margin-left: calc(-1 * ((100vw - 930px)/2));
+    padding: 50px 40px 74px calc((100vw - 930px)/2); }
+    @media screen and (max-width: 1350px) {
+      .form-basket .back-form {
+        margin-left: calc(-1 * ((100vw - 930px)/2));
+        padding: 50px 40px 74px calc((100vw - 930px)/2); } }
+    @media screen and (max-width: 991px) {
+      .form-basket .back-form {
+        margin: 0;
+        padding: 40px 20px; } }
+  @media screen and (max-width: 991px) {
+    .form-basket .flexbuy {
+      text-align: center; } }
+  .form-basket .flexbuy h1 {
+    color: white; }
+  .form-basket .flexbuy h2 {
+    margin-top: 40px;
+    color: white; }
+  .form-basket .flexform {
+    margin-top: 40px;
+    width: 840px; }
+    @media screen and (max-width: 1350px) {
+      .form-basket .flexform {
+        width: 560px; } }
+    @media screen and (max-width: 991px) {
+      .form-basket .flexform {
+        width: 100%; } }
+    .form-basket .flexform .form-column {
+      margin-bottom: 52px;
+      flex-direction: column; }
+      .form-basket .flexform .form-column .w-49 {
+        width: 49%; }
+        @media screen and (max-width: 991px) {
+          .form-basket .flexform .form-column .w-49 {
+            width: 100%; } }
+        .form-basket .flexform .form-column .w-49 .entryfield {
+          resize: none;
+          border: none;
+          border-bottom: 2px solid var(--footer-text);
+          background: none;
+          font-family: "Montserrat-Medium", sans-serif;
+          font-size: 16px;
+          line-height: 24px;
+          color: var(--footer-text);
+          padding-bottom: 6px; }
+        .form-basket .flexform .form-column .w-49 #mail {
+          margin-top: 36px; }
+        .form-basket .flexform .form-column .w-49 .entryfield:nth-child(1) {
+          margin-bottom: 36px; }
+        .form-basket .flexform .form-column .w-49 .entryfield::placeholder {
+          color: var(--footer-text); }
+        .form-basket .flexform .form-column .w-49 .chek-valid {
+          background-image: url("../images/valid.svg");
+          background-position: right;
+          background-repeat: no-repeat;
+          background-size: 12px; }
+        .form-basket .flexform .form-column .w-49 .chek-invalid {
+          border-bottom: 2px solid var(--red);
+          color: var(--red); }
+        .form-basket .flexform .form-column .w-49 .requisites {
+          margin-top: 42px; }
+          .form-basket .flexform .form-column .w-49 .requisites div:nth-child(1) {
+            margin-right: 4px; }
+          .form-basket .flexform .form-column .w-49 .requisites h4 {
+            color: var(--footer-text);
+            border-bottom: 2px solid var(--footer-text); }
+      @media screen and (max-width: 740px) {
+        .form-basket .flexform .form-column {
+          width: auto; } }
+    .form-basket .flexform .button-form2 {
+      color: var(--footer-text);
+      background: none;
+      border: 2px solid var(--footer-text);
+      padding: 15px 100px;
+      cursor: pointer;
+      text-decoration: none;
+      width: min-content;
+      font-family: "Montserrat-Medium", sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      transition: 0.5s; }
+      @media screen and (max-width: 400px) {
+        .form-basket .flexform .button-form2 {
+          padding: 15px 30px; } }
+    .form-basket .flexform .button-form2:hover {
+      background: black;
+      border: 2px solid black;
+      color: white; }
+  @media screen and (max-width: 991px) {
+    .form-basket .contacts {
+      margin-top: 60px;
+      justify-content: center; } }
+  .form-basket .contacts h1 {
+    margin-bottom: 28px; }
+  .form-basket .contacts .phoneemail {
+    text-align: center; }
+    .form-basket .contacts .phoneemail h3 {
+      margin-bottom: 12px; }
+    .form-basket .contacts .phoneemail h4:nth-child(1) {
+      margin-bottom: 6px; }
+    .form-basket .contacts .phoneemail .phone, .form-basket .contacts .phoneemail .email {
+      margin-bottom: 32px; }
+
+.mob-cost {
+  flex: 0.7; }
+  @media screen and (max-width: 991px) {
+    .mob-cost {
+      justify-content: space-around !important; } }
+  @media screen and (max-width: 600px) {
+    .mob-cost {
+      justify-content: space-between !important; } }
+  @media screen and (max-width: 500px) {
+    .mob-cost h3 {
+      font-family: "Montserrat-Medium", sans-serif;
+      font-size: 16px;
+      line-height: 24px; } }
+
+@media screen and (max-width: 991px) {
+  .form-mob {
+    flex-direction: column; } }
+
+@media screen and (max-width: 991px) {
+  .mt-36 {
+    margin-top: 36px; } }
+
+/*# sourceMappingURL=basket.css.map */

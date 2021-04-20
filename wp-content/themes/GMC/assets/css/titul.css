@@ -16,6 +16,13 @@ body {
 .margin {
   width: 1280px;
   margin: 0 auto; }
+  @media screen and (max-width: 1350px) {
+    .margin {
+      width: 950px; } }
+  @media screen and (max-width: 991px) {
+    .margin {
+      width: 100%;
+      padding: 0 20px; } }
 
 a {
   color: var(--text);
@@ -28,7 +35,7 @@ a:hover {
   color: var(--text); }
 
 h1 {
-  font-family: "NewYorkExtraLargeMedium", sans-serif;
+  font-family: "NewYorkExtraLargeRegular", sans-serif;
   font-size: 48px;
   line-height: 48px; }
 
@@ -100,6 +107,12 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 1350px) {
+      .banner .box-banner {
+        width: calc(100vw - (100vw - 971px)/2); } }
+    @media screen and (max-width: 991px) {
+      .banner .box-banner {
+        width: 100%; } }
     .banner .box-banner .margin {
       margin: 0; }
       .banner .box-banner .margin .block-txt {
@@ -131,29 +144,68 @@ p {
   .pride .margin .pride-desc, .about .margin .pride-desc, .production .margin .pride-desc {
     width: 1060px;
     margin: 0 auto 60px; }
+    @media screen and (max-width: 1350px) {
+      .pride .margin .pride-desc, .about .margin .pride-desc, .production .margin .pride-desc {
+        width: 100%; } }
+    @media screen and (max-width: 991px) {
+      .pride .margin .pride-desc, .about .margin .pride-desc, .production .margin .pride-desc {
+        flex-direction: column; } }
     .pride .margin .pride-desc h4, .about .margin .pride-desc h4, .production .margin .pride-desc h4 {
       width: 510px; }
+      @media screen and (max-width: 1350px) {
+        .pride .margin .pride-desc h4, .about .margin .pride-desc h4, .production .margin .pride-desc h4 {
+          width: 47%; } }
+      @media screen and (max-width: 991px) {
+        .pride .margin .pride-desc h4, .about .margin .pride-desc h4, .production .margin .pride-desc h4 {
+          width: 100%; } }
+    @media screen and (max-width: 991px) {
+      .pride .margin .pride-desc h4:nth-child(1), .about .margin .pride-desc h4:nth-child(1), .production .margin .pride-desc h4:nth-child(1) {
+        margin-bottom: 10px; } }
+    .pride .margin .pride-desc div img, .about .margin .pride-desc div img, .production .margin .pride-desc div img {
+      width: 100%; }
   .pride .margin .statistic, .about .margin .statistic, .production .margin .statistic {
     width: 1100px; }
+    @media screen and (max-width: 1350px) {
+      .pride .margin .statistic, .about .margin .statistic, .production .margin .statistic {
+        width: 100%; } }
+    @media screen and (max-width: 991px) {
+      .pride .margin .statistic, .about .margin .statistic, .production .margin .statistic {
+        height: 416px;
+        flex-direction: column;
+        align-items: center; } }
     .pride .margin .statistic div p, .about .margin .statistic div p, .production .margin .statistic div p {
       color: var(--red);
       margin-bottom: 12px; }
     .pride .margin .statistic div h5, .about .margin .statistic div h5, .production .margin .statistic div h5 {
       white-space: pre-wrap; }
 
+@media screen and (max-width: 991px) {
+  .bigflexform {
+    flex-direction: column; } }
+
 .bigform, .bigform-contacts {
   background: var(--back);
   padding-bottom: 215px; }
   .bigform .osnovsix, .bigform-contacts .osnovsix {
-    border-right: 2px solid var(--red);
     padding-right: 72px;
     padding-bottom: 20px;
     width: 912px; }
+    @media screen and (max-width: 991px) {
+      .bigform .osnovsix, .bigform-contacts .osnovsix {
+        width: 100% !important;
+        padding-bottom: 45px;
+        padding-right: 0; } }
     .bigform .osnovsix .flexbuy h1, .bigform-contacts .osnovsix .flexbuy h1 {
       margin-bottom: 40px; }
+      @media screen and (max-width: 991px) {
+        .bigform .osnovsix .flexbuy h1, .bigform-contacts .osnovsix .flexbuy h1 {
+          margin-bottom: 28px; } }
     .bigform .osnovsix .flexbuy h4, .bigform-contacts .osnovsix .flexbuy h4 {
       margin-bottom: 60px;
       white-space: pre-wrap; }
+      @media screen and (max-width: 991px) {
+        .bigform .osnovsix .flexbuy h4, .bigform-contacts .osnovsix .flexbuy h4 {
+          margin-bottom: 44px; } }
     .bigform .osnovsix .flexform .form-column, .bigform-contacts .osnovsix .flexform .form-column {
       margin-bottom: 52px; }
       .bigform .osnovsix .flexform .form-column .w-49, .bigform-contacts .osnovsix .flexform .form-column .w-49 {
@@ -201,7 +253,11 @@ p {
       border: 2px solid black;
       color: white; }
   .bigform .contacts, .bigform-contacts .contacts {
-    margin-left: 48px; }
+    padding-left: 48px;
+    border-left: 2px solid var(--red); }
+    @media screen and (max-width: 991px) {
+      .bigform .contacts, .bigform-contacts .contacts {
+        padding-left: 20px; } }
     .bigform .contacts .phoneaddressemail h3, .bigform-contacts .contacts .phoneaddressemail h3 {
       margin-bottom: 12px; }
     .bigform .contacts .phoneaddressemail h4:nth-child(1), .bigform-contacts .contacts .phoneaddressemail h4:nth-child(1) {
@@ -212,6 +268,9 @@ p {
       margin-bottom: 24px; }
       .bigform .contacts .phoneaddressemail .address h4, .bigform-contacts .contacts .phoneaddressemail .address h4 {
         white-space: pre-wrap; }
+    @media screen and (max-width: 400px) {
+      .bigform .contacts .tiv, .bigform-contacts .contacts .tiv {
+        flex-direction: column; } }
     .bigform .contacts .tiv h4, .bigform-contacts .contacts .tiv h4 {
       margin-right: 30px; }
     .bigform .contacts .tiv h4:nth-child(3), .bigform-contacts .contacts .tiv h4:nth-child(3) {

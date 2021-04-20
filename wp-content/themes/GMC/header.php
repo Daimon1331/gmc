@@ -44,18 +44,56 @@
                     <h5><a href="tel:+375296840030">+375 29 684-00-30</a></h5>
                 </div>
                 <div class="d-flex justify-content-between viber-telegram">
-                    <div><a href="/"><img alt="viber" src="<?php echo get_template_directory_uri() ?>/assets/images/viber.svg"></a></div>
-                    <div><a href="/"><img alt="telegram" src="<?php echo get_template_directory_uri() ?>/assets/images/telegram.svg"></a></div>
+                    <div><a class="d-flex" href="/"><img alt="viber" src="<?php echo get_template_directory_uri() ?>/assets/images/viber.svg"></a></div>
+                    <div><a class="d-flex" href="/"><img alt="telegram" src="<?php echo get_template_directory_uri() ?>/assets/images/telegram.svg"></a></div>
                 </div>
                 <div class="mail"><a href="mailto:"><h5 class="h5-semibold">info@lgmc.by</h5></a></div>
                 <div class="d-flex justify-content-between searh-basket">
-                    <div><a href="/"><img alt="Search" src="<?php echo get_template_directory_uri() ?>/assets/images/search.svg"></a></div>
-                    <div><a href="/"><img alt="basket" src="<?php echo get_template_directory_uri() ?>/assets/images/basket.svg"></a></div>
+                    <div>
+                        <form class="form-search" action="http://google.com/search" target="_blank">
+                            <input type="search" name="q" placeholder="Поиск...">
+                            <input type="hidden" name="as_sitesearch" value="gmc.by">
+                            <button type="submit"></button>
+                        </form>
+<!--                        <a href="/"><img alt="Search" src="--><?php //echo get_template_directory_uri() ?><!--/assets/images/search.svg"></a>-->
+                    </div>
+                    <div><a class="d-flex" href="<?php echo get_option('home'); ?>/basket/"><img alt="basket" src="<?php echo get_template_directory_uri() ?>/assets/images/basket.svg"></a></div>
+                    <div class="menu-button"><img src="<?php echo get_template_directory_uri() ?>/assets/images/burgermenu.svg"></div>
+                    <div class="menu-cross"><img src="<?php echo get_template_directory_uri() ?>/assets/images/cross.svg"></div>
                 </div>
             </div>
-<!--            <img class="menu-button" src="--><?php //echo get_template_directory_uri() ?><!--/assets/images/burgermenu.png">-->
-<!--            <img class="menu-cross" src="--><?php //echo get_template_directory_uri() ?><!--/assets/images/cross.png">-->
+
+
         </div>
 
     </div>
 </header>
+<div class="mob-nav">
+    <div class="margin">
+        <div class="d-flex flex-column align-items-center">
+            <form class="form-search" action="http://google.com/search" target="_blank">
+                <input type="search" name="q" placeholder="Поиск...">
+                <input type="hidden" name="as_sitesearch" value="gmc.by">
+                <button type="submit"></button>
+            </form>
+            <nav class="d-flex justify-content-between minnav">
+                <h2><a href="<?php echo get_option('home'); ?>/about/">О КОМПАНИИ</a></h2>
+                <h2><a href="<?php echo get_option('home'); ?>/catalog/">КАТАЛОГ</a></h2>
+                <h2><a href="<?php echo get_option('home'); ?>/contacts/">КОНТАКТЫ</a></h2>
+            </nav>
+            <div class="d-flex justify-content-between align-items-center tel-mail">
+                <div class="d-flex tel">
+                    <h3><a href="tel:+375296969399">+375 29 696-93-99</a></h3>
+                    <h3><a href="tel:+375296840030">+375 29 684-00-30</a></h3>
+                </div>
+                <div class="mail"><a href="mailto:"><h3 class="h5-semibold">info@lgmc.by</h3></a></div>
+                <div class="d-flex justify-content-between viber-telegram">
+                    <div><a class="d-flex" href="/"><img alt="viber" src="<?php echo get_template_directory_uri() ?>/assets/images/viber.svg"></a></div>
+                    <div><a class="d-flex" href="/"><img alt="telegram" src="<?php echo get_template_directory_uri() ?>/assets/images/telegram.svg"></a></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

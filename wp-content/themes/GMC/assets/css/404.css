@@ -1,7 +1,7 @@
 .error-main {
   background: var(--back);
   text-align: center;
-  height: calc(100vh - 330px); }
+  height: calc(100vh - 96px); }
   .error-main .ultra {
     margin: 184px 0 60px;
     color: var(--back);
@@ -9,12 +9,18 @@
   .error-main h3 {
     white-space: pre-wrap;
     margin-bottom: 40px; }
+    @media screen and (max-width: 600px) {
+      .error-main h3 {
+        white-space: normal; } }
   .error-main a {
     color: black;
     padding: 15px 120px;
     border: 2px solid black;
     text-align: center;
     transition: 0.5s; }
+    @media screen and (max-width: 600px) {
+      .error-main a {
+        padding: 15px 30px; } }
   .error-main a:hover {
     background: black;
     border: 2px solid black;

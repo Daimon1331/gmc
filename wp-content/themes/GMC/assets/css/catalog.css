@@ -6,6 +6,10 @@
   .catalog .margin .series-catalog, .other-collection .margin .series-catalog {
     width: 400px;
     margin-bottom: 60px; }
+    @media screen and (max-width: 991px) {
+      .catalog .margin .series-catalog, .other-collection .margin .series-catalog {
+        width: 100%;
+        margin-bottom: 40px; } }
     .catalog .margin .series-catalog .img-catalog, .other-collection .margin .series-catalog .img-catalog {
       margin-bottom: 12px; }
       .catalog .margin .series-catalog .img-catalog img, .other-collection .margin .series-catalog .img-catalog img {

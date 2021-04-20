@@ -5,16 +5,37 @@ footer
   padding: 24px 0 42px
   .footer-nav
     margin-bottom: 66px
+    @media screen and (max-width: 830px)
+      margin-bottom: 0
+    @media screen and (max-width: 1350px)
+      flex-direction: column
+      margin-bottom: 15px
     .minnav
       width: 442px
+      @media screen and (max-width: 1350px)
+        margin: 40px 0
+      @media screen and (max-width: 830px)
+        width: auto
+        flex-direction: column
+        height: 108px
+        align-items: center
+      h5
+        transition: .5s
+        border-bottom: 1px solid var(--text)
       h5:hover
         color: var(--footer-text)!important
         border-bottom: 1px solid white
     .ico-footer
       width: 112px
   .footer-info
+    @media screen and (max-width: 830px)
+      flex-direction: column
     h5:nth-child(1)
-      width: 840px
+      width: 65%
+      @media screen and (max-width: 830px)
+        margin-bottom: 15px
+        width: 100%
+
 
 
 

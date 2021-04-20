@@ -16,7 +16,11 @@ body
 .margin
   width: 1280px
   margin: 0 auto
-
+  @media screen and (max-width: 1350px)
+    width: 950px
+  @media screen and (max-width: 991px)
+    width: 100%
+    padding: 0 20px
 a
   color: var(--text)
   text-decoration: none
@@ -28,7 +32,7 @@ a:hover
   color: var(--text)
 
 h1
-  font-family: 'NewYorkExtraLargeMedium', sans-serif
+  font-family: 'NewYorkExtraLargeRegular', sans-serif
   font-size: 48px
   line-height: 48px
 
@@ -101,6 +105,10 @@ p
     background-size: cover
     background-position: center
     background-repeat: no-repeat
+    @media screen and (max-width: 1350px)
+      width: calc(100vw - (100vw - 971px)/2)
+    @media screen and (max-width: 991px)
+      width: 100%
     .margin
       margin: 0
       .block-txt
@@ -133,31 +141,60 @@ p
     .pride-desc
       width: 1060px
       margin: 0 auto 60px
+      @media screen and (max-width: 1350px)
+        width: 100%
+      @media screen and (max-width: 991px)
+        flex-direction: column
       h4
         width: 510px
+        @media screen and (max-width: 1350px)
+          width: 47%
+        @media screen and (max-width: 991px)
+          width: 100%
+      h4:nth-child(1)
+        @media screen and (max-width: 991px)
+          margin-bottom: 10px
+      div
+        img
+          width: 100%
     .statistic
       width: 1100px
+      @media screen and (max-width: 1350px)
+        width: 100%
+      @media screen and (max-width: 991px)
+        height: 416px
+        flex-direction: column
+        align-items: center
       div
         p
           color: var(--red)
           margin-bottom: 12px
         h5
           white-space: pre-wrap
-
+.bigflexform
+  @media screen and (max-width: 991px)
+    flex-direction: column
 .bigform, .bigform-contacts
   background: var(--back)
   padding-bottom: 215px
   .osnovsix
-    border-right: 2px solid var(--red)
     padding-right: 72px
     padding-bottom: 20px
     width: 912px
+    @media screen and (max-width: 991px)
+      width: 100% !important
+      padding-bottom: 45px
+      padding-right: 0
     .flexbuy
       h1
         margin-bottom: 40px
+        @media screen and (max-width: 991px)
+          margin-bottom: 28px
       h4
         margin-bottom: 60px
         white-space: pre-wrap
+        @media screen and (max-width: 991px)
+          margin-bottom: 44px
     .flexform
       .form-column
         margin-bottom: 52px
@@ -205,7 +242,10 @@ p
         border: 2px solid black
         color: white
   .contacts
-    margin-left: 48px
+    padding-left: 48px
+    border-left: 2px solid var(--red)
+    @media screen and (max-width: 991px)
+      padding-left: 20px
     .phoneaddressemail
       //@media screen and (max-width: 1170px)
       //  flex-direction: row
@@ -221,6 +261,8 @@ p
         h4
           white-space: pre-wrap
     .tiv
+      @media screen and (max-width: 400px)
+        flex-direction: column
       h4
         margin-right: 30px
       h4:nth-child(3)
