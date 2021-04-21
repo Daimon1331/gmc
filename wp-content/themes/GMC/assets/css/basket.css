@@ -134,8 +134,10 @@
       .form-basket .flexform {
         width: 100%; } }
     .form-basket .flexform .form-column {
-      margin-bottom: 52px;
-      flex-direction: column; }
+      margin-bottom: 52px; }
+      @media screen and (max-width: 991px) {
+        .form-basket .flexform .form-column {
+          flex-direction: column; } }
       .form-basket .flexform .form-column .w-49 {
         width: 49%; }
         @media screen and (max-width: 991px) {
