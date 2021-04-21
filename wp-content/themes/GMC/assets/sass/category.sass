@@ -24,6 +24,8 @@
       width: 100%
 .filters
   background: var(--back)
+  .furniture::-webkit-scrollbar
+    width: 0
   .furniture
     font-family: 'Montserrat-SemiBold', sans-serif
     font-size: 20px
@@ -177,6 +179,9 @@
         margin: 30px 0
       div:nth-child(1)
         margin-right: 26px
+        .color-sub
+          span::before
+            background-image: url("../images/check_color_milk.svg")
       .color-sub
         cursor: pointer
       .color-sub

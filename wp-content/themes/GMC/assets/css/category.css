@@ -27,6 +27,8 @@
 
 .filters {
   background: var(--back); }
+  .filters .furniture::-webkit-scrollbar {
+    width: 0; }
   .filters .furniture {
     font-family: "Montserrat-SemiBold", sans-serif;
     font-size: 20px;
@@ -184,6 +186,8 @@
       margin: 30px 0; } }
   .subcategory .subcategory-options .color-subcategory div:nth-child(1) {
     margin-right: 26px; }
+    .subcategory .subcategory-options .color-subcategory div:nth-child(1) .color-sub span::before {
+      background-image: url("../images/check_color_milk.svg"); }
   .subcategory .subcategory-options .color-subcategory .color-sub {
     cursor: pointer; }
   .subcategory .subcategory-options .color-subcategory .color-sub input {
