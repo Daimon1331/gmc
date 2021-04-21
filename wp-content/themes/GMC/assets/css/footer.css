@@ -23,10 +23,11 @@ footer {
           flex-direction: column;
           height: 108px;
           align-items: center; } }
-      footer .footer-nav .minnav h5 {
+      footer .footer-nav .minnav li {
+        list-style-type: none;
         transition: 0.5s;
         border-bottom: 1px solid var(--text); }
-      footer .footer-nav .minnav h5:hover {
+      footer .footer-nav .minnav li:hover {
         color: var(--footer-text) !important;
         border-bottom: 1px solid white; }
     footer .footer-nav .ico-footer {

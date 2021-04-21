@@ -30,10 +30,15 @@ header .logo, .mob-nav .logo {
       margin-right: 28px; } }
 header .minnav, .mob-nav .minnav {
   width: 310px; }
-  header .minnav h5, .mob-nav .minnav h5 {
+  header .minnav li, .mob-nav .minnav li {
+    list-style-type: none;
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
     transition: 0.5s;
     border-bottom: 1px solid var(--back); }
-  header .minnav h5:hover, .mob-nav .minnav h5:hover {
+  header .minnav li:hover, .mob-nav .minnav li:hover {
     border-bottom: 1px solid black; }
 header .tel-mail, .mob-nav .tel-mail {
   width: 600px; }

@@ -32,10 +32,12 @@
         <div class="d-flex justify-content-between align-items-center nav">
             <div class="d-flex align-items-center">
             <a  class="logo" href="<?php echo get_option('home'); ?>/"><img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/logo_header.svg"></a>
-            <nav class="d-flex justify-content-between minnav">
-                <h5><a href="<?php echo get_option('home'); ?>/about/">О КОМПАНИИ</a></h5>
-                <h5><a href="<?php echo get_option('home'); ?>/catalog/">КАТАЛОГ</a></h5>
-                <h5><a href="<?php echo get_option('home'); ?>/contacts/">КОНТАКТЫ</a></h5>
+            <nav class="minnav">
+                <ul class="d-flex justify-content-between">
+                <li><a href="<?php echo get_option('home'); ?>/about/">О КОМПАНИИ</a></li>
+                <li><a href="<?php echo get_option('home'); ?>/catalog/">КАТАЛОГ</a></li>
+                <li><a href="<?php echo get_option('home'); ?>/contacts/">КОНТАКТЫ</a></li>
+                </ul>
             </nav>
             </div>
             <div class="d-flex justify-content-between align-items-center tel-mail">
