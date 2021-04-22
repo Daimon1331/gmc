@@ -139,10 +139,12 @@ Template Name: Category
                     <div class="d-flex color-subcategory">
                         <div><label class="color-sub" id="variable">
                                 <input value="дуб молочный" type="radio" name="color-sub" checked="checked">
-                                <span class="h4-semibold color-sub-txt">дуб молочный</span></label></div>
+                                <span class="h4-semibold color-sub-txt">дуб молочный</span></label>
+                        </div>
                         <div><label class="color-sub" id="variable">
                                 <input value="светлый бук" type="radio" name="color-sub">
-                                <span class="h4-semibold color-sub-txt">светлый бук</span></label></div>
+                                <span class="h4-semibold color-sub-txt">светлый бук</span></label>
+                        </div>
                     </div>
                     <div class="d-flex flex-column tabs-option">
                             <div class="row">
