@@ -128,5 +128,21 @@ Template Name: About
     </div>
 </section>
 <?php get_template_part( 'other-collections' );  ?>
+<div class="modal-swiper">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><img src="<?php echo get_template_directory_uri() ?>/assets/images/crossmodal.svg"></button>
+    <div class="margin">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/doc1.jpg"></div>
+                <div class="swiper-slide"><img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/doc2.jpg"></div>
+                <div class="swiper-slide"><img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/doc3.jpg"></div>
+                <div class="swiper-slide"><img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/doc4.jpg"></div>
+                <div class="swiper-slide"><img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/doc5.jpg"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</div>
 <?php get_footer(); ?>
 

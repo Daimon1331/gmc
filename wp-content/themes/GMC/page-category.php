@@ -39,7 +39,6 @@ Template Name: Category
         <div class="d-flex flex-column category">
             <h2 class="h2-extra">Столы ученические - двухместные</h2>
             <div class="slider-goods">
-<!--                <div class="swiper-button-prev"></div>-->
                 <div class="swiper-container">
                     <div class="d-flex swiper-wrapper">
                         <div class="swiper-slide active-red-slide">
@@ -109,7 +108,6 @@ Template Name: Category
                     </div>
                     <div class="swiper-scrollbar"></div>
                 </div>
-<!--                <div class="swiper-button-next"></div>-->
             </div>
             <div class="d-flex subcategory">
                     <div class="swiper-container">
@@ -201,7 +199,7 @@ Template Name: Category
 </section>
 <div class="modal-swiper">
     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><img src="<?php echo get_template_directory_uri() ?>/assets/images/crossmodal.svg"></button>
-    <div class="margin-active">
+    <div class="margin">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-open-modal"><img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/subslider.jpg"></div>

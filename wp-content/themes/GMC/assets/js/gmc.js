@@ -80,13 +80,13 @@ jQuery(function($) {
 
 
     const swiper1 = new Swiper('.slider-doc .swiper-container', {
-        loop: false,
+        loop: true,
         slidesPerView: 1,
         spaceBetween: 40,
         // Navigation arrows
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.slider-doc .swiper-button-next',
+            prevEl: '.slider-doc .swiper-button-prev',
         },
         breakpoints: {
             // when window width is >= 480px
@@ -111,9 +111,10 @@ jQuery(function($) {
     });
 
     const swiper2 = new Swiper('.slider-goods .swiper-container', {
-        loop: false,
+
         slidesPerView: 6,
         spaceBetween: 24,
+        freeMode: true,
         grabCursor: true,
         scrollbar: {
             el: '.swiper-scrollbar',
@@ -198,52 +199,27 @@ jQuery(function($) {
     });
 
 
-
-    $(".subcategory .swiper-slide").click(function () {
+    $(".subcategory .swiper-slide, .slider-doc .swiper-slide").click(function () {
         $("body").css("overflow", "hidden");
-        $(".modal-swiper").toggleClass("modal-swiper-active");
-        $(".btn-secondary").show();
-        $(".margin-active").toggleClass("margin");
-        $(".modal-swiper .swiper-container").toggleClass("modal-swiper-container");
-        $(".modal-swiper .swiper-slide").toggleClass("modal-swiper-slide");
-        $(".modal-swiper .swiper-button-prev").toggleClass("modal-swiper-prev");
-        $(".modal-swiper .swiper-button-next").toggleClass("modal-swiper-next");
-        swiper3.destroy();
-        const swiper4 = new Swiper('.margin-active .swiper-container', {
+        $(".modal-swiper").addClass("modal-swiper-active");
+        const swiper4 = new Swiper('.modal-swiper .swiper-container', {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 10,
             // Navigation arrows
             navigation: {
-                nextEl: '.margin-active .swiper-button-next',
-                prevEl: '.margin-active .swiper-button-prev',
+                nextEl: '.modal-swiper .swiper-button-next',
+                prevEl: '.modal-swiper .swiper-button-prev',
             },
         });
     });
 
     $(".btn-secondary").click(function () {
-        const swiper4 = new Swiper('.subcategory .swiper-container', {
-        });
-        swiper4.destroy();
         $("body").css("overflow", "visible");
-        $(".modal-swiper").toggleClass("modal-swiper-active");
-        $(".btn-secondary").hide();
-        $(".margin-active").toggleClass("margin");
-        $(".modal-swiper .swiper-container").toggleClass("modal-swiper-container");
-        $(".modal-swiper .swiper-slide").toggleClass("modal-swiper-slide");
-        $(".modal-swiper .swiper-button-prev").toggleClass("modal-swiper-prev");
-        $(".modal-swiper .swiper-button-next").toggleClass("modal-swiper-next");
-        const swiper3 = new Swiper('.subcategory .swiper-container', {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 10,
-            // Navigation arrows
-            navigation: {
-                nextEl: '.subcategory .swiper-button-next',
-                prevEl: '.subcategory .swiper-button-prev',
-            },
-        });
+        $(".modal-swiper").removeClass("modal-swiper-active");
     });
+
+
 
 
 });
