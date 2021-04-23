@@ -206,10 +206,20 @@ p {
       @media screen and (max-width: 991px) {
         .bigform .osnovsix .flexbuy h4, .bigform-contacts .osnovsix .flexbuy h4 {
           margin-bottom: 44px; } }
+      @media screen and (max-width: 750px) {
+        .bigform .osnovsix .flexbuy h4, .bigform-contacts .osnovsix .flexbuy h4 {
+          white-space: normal; } }
     .bigform .osnovsix .flexform .form-column, .bigform-contacts .osnovsix .flexform .form-column {
       margin-bottom: 52px; }
+      @media screen and (max-width: 740px) {
+        .bigform .osnovsix .flexform .form-column, .bigform-contacts .osnovsix .flexform .form-column {
+          flex-direction: column; } }
       .bigform .osnovsix .flexform .form-column .w-49, .bigform-contacts .osnovsix .flexform .form-column .w-49 {
         width: 49%; }
+        @media screen and (max-width: 740px) {
+          .bigform .osnovsix .flexform .form-column .w-49, .bigform-contacts .osnovsix .flexform .form-column .w-49 {
+            width: auto;
+            margin-bottom: 42px; } }
         .bigform .osnovsix .flexform .form-column .w-49 .entryfield, .bigform-contacts .osnovsix .flexform .form-column .w-49 .entryfield {
           resize: none;
           border: none;
@@ -232,9 +242,6 @@ p {
         .bigform .osnovsix .flexform .form-column .w-49 .chek-invalid, .bigform-contacts .osnovsix .flexform .form-column .w-49 .chek-invalid {
           border-bottom: 2px solid var(--red);
           color: var(--red); }
-      @media screen and (max-width: 740px) {
-        .bigform .osnovsix .flexform .form-column, .bigform-contacts .osnovsix .flexform .form-column {
-          width: auto; } }
     .bigform .osnovsix .flexform .button-form1, .bigform-contacts .osnovsix .flexform .button-form1 {
       color: var(--text);
       background: none;
@@ -248,6 +255,10 @@ p {
       line-height: 18px;
       text-transform: uppercase;
       transition: 0.5s; }
+      @media screen and (max-width: 500px) {
+        .bigform .osnovsix .flexform .button-form1, .bigform-contacts .osnovsix .flexform .button-form1 {
+          width: 100%;
+          padding: 15px 0; } }
     .bigform .osnovsix .flexform .button-form1:hover, .bigform-contacts .osnovsix .flexform .button-form1:hover {
       background: black;
       border: 2px solid black;

@@ -195,11 +195,18 @@ p
         white-space: pre-wrap
         @media screen and (max-width: 991px)
           margin-bottom: 44px
+        @media screen and (max-width: 750px)
+          white-space: normal
     .flexform
       .form-column
         margin-bottom: 52px
+        @media screen and (max-width: 740px)
+          flex-direction: column
         .w-49
           width: 49%
+          @media screen and (max-width: 740px)
+            width: auto
+            margin-bottom: 42px
           .entryfield
             resize: none
             border: none
@@ -222,8 +229,6 @@ p
           .chek-invalid
             border-bottom: 2px solid var(--red)
             color: var(--red)
-        @media screen and (max-width: 740px)
-          width: auto
       .button-form1
         color: var(--text)
         background: none
@@ -237,6 +242,9 @@ p
         line-height: 18px
         text-transform: uppercase
         transition: .5s
+        @media screen and (max-width: 500px)
+          width: 100%
+          padding: 15px 0
       .button-form1:hover
         background: black
         border: 2px solid black
