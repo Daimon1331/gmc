@@ -19,10 +19,11 @@ footer {
           margin: 40px 0; } }
       @media screen and (max-width: 830px) {
         footer .footer-nav .minnav {
-          width: auto;
-          flex-direction: column;
-          height: 108px;
-          align-items: center; } }
+          width: auto; }
+          footer .footer-nav .minnav ul {
+            flex-direction: column;
+            height: 108px;
+            align-items: center; } }
       footer .footer-nav .minnav li {
         list-style-type: none;
         transition: 0.5s;

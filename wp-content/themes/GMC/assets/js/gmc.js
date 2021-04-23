@@ -219,9 +219,6 @@ jQuery(function($) {
         $(".modal-swiper").removeClass("modal-swiper-active");
     });
 
-
-
-
 });
 
 

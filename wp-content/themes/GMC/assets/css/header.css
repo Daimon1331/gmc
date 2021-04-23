@@ -134,9 +134,15 @@ header .form-search, .mob-nav .form-search {
   background: var(--back);
   padding: 60px 0 0;
   z-index: 999; }
-  .mob-nav .minnav {
+  .mob-nav .minnav ul {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 50px;
+    height: 150px; }
+  .mob-nav .minnav li {
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 24px;
+    line-height: 32px; }
   .mob-nav .form-search {
     width: 294px; }
     .mob-nav .form-search input {
@@ -146,9 +152,6 @@ header .form-search, .mob-nav .form-search {
       color: var(--text);
       width: 270px;
       left: 0; }
-  .mob-nav .minnav {
-    margin-top: 50px;
-    height: 150px; }
   .mob-nav .tel-mail {
     margin-top: 60px;
     flex-direction: column; }

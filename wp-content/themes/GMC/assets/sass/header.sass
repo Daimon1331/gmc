@@ -129,8 +129,15 @@ header, .mob-nav
   padding: 60px 0 0
   z-index: 999
   .minnav
-    flex-direction: column
-    align-items: center
+    ul
+      flex-direction: column
+      align-items: center
+      margin-top: 50px
+      height: 150px
+    li
+      font-family: 'Montserrat-SemiBold', sans-serif
+      font-size: 24px
+      line-height: 32px
   .form-search
     width: 294px
     input
@@ -140,9 +147,6 @@ header, .mob-nav
       color: var(--text)
       width: 270px
       left: 0
-  .minnav
-    margin-top: 50px
-    height: 150px
   .tel-mail
     margin-top: 60px
     flex-direction: column

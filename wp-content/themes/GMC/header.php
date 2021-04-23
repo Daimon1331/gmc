@@ -78,10 +78,12 @@
                 <input type="hidden" name="as_sitesearch" value="gmc.by">
                 <button type="submit"></button>
             </form>
-            <nav class="d-flex justify-content-between minnav">
-                <h2><a href="<?php echo get_option('home'); ?>/about/">О КОМПАНИИ</a></h2>
-                <h2><a href="<?php echo get_option('home'); ?>/catalog/">КАТАЛОГ</a></h2>
-                <h2><a href="<?php echo get_option('home'); ?>/contacts/">КОНТАКТЫ</a></h2>
+            <nav class="minnav">
+                <ul class="d-flex justify-content-between">
+                    <li><a href="<?php echo get_option('home'); ?>/about/">О КОМПАНИИ</a></li>
+                    <li><a href="<?php echo get_option('home'); ?>/catalog/">КАТАЛОГ</a></li>
+                    <li><a href="<?php echo get_option('home'); ?>/contacts/">КОНТАКТЫ</a></li>
+                </ul>
             </nav>
             <div class="d-flex justify-content-between align-items-center tel-mail">
                 <div class="d-flex tel">
