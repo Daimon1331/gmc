@@ -103,6 +103,9 @@
       height: 215px; }
     .slider-card .slider-goods .swiper-container {
       width: 1120px; }
+      @media screen and (max-width: 1350px) {
+        .slider-card .slider-goods .swiper-container {
+          width: 100%; } }
       .slider-card .slider-goods .swiper-container .swiper-slide {
         display: flex;
         flex-direction: column;
@@ -151,7 +154,7 @@
       width: 100%;
       height: auto;
       flex: 0 0 auto;
-      margin: 0; }
+      margin: 0 0 30px 0; }
       .subcategory .swiper-container img {
         width: 100%; } }
 .subcategory .subcategory-options {
