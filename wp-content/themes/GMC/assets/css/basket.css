@@ -169,11 +169,15 @@
           color: var(--red); }
         .form-basket .flexform .form-column .w-49 .requisites {
           margin-top: 42px; }
+          .form-basket .flexform .form-column .w-49 .requisites label {
+            cursor: pointer; }
           .form-basket .flexform .form-column .w-49 .requisites div:nth-child(1) {
             margin-right: 4px; }
           .form-basket .flexform .form-column .w-49 .requisites h4 {
             color: var(--footer-text);
             border-bottom: 2px solid var(--footer-text); }
+          .form-basket .flexform .form-column .w-49 .requisites input {
+            display: none; }
       @media screen and (max-width: 740px) {
         .form-basket .flexform .form-column {
           width: auto; } }

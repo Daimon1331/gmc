@@ -111,9 +111,13 @@ Template Name: Basket
                             <input class="entryfield input-mask__phone" pattern="\+375\s?[\(]{0,1}(25|29|33|44)[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" title="+375 (25/29/33/44) XXX-XX-XX" type="text" id="phone" placeholder="Телефон*" name="phone" required>
                             <textarea class="entryfield" rows="1" id="comment" name="comment" placeholder="Комментарии"></textarea>
                             <div class="d-flex requisites">
-                            <div>
-                                <img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/clip.svg"></div>
-                            <h4>Прикрепить реквизиты</h4>
+                                <label class="d-flex">
+                                <div>
+                                    <img alt="GMC" src="<?php echo get_template_directory_uri() ?>/assets/images/clip.svg">
+                                </div>
+                                <input type="file">
+                                <h4>Прикрепить реквизиты</h4>
+                                </label>
                             </div>
                         </div>
                     </div>
